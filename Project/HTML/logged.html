@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="../icon.png">
+	  
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/icons/icomoon.css">
+    <link rel="stylesheet" href="/icons/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/css/plugins.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/dist/css/swiper.min.css">
+
+    
+
+    <title>한동차트</title>
+</head>
+<body>
+   <div class="page-content">
+      <!-- Nav Bar -->
+      <nav id="main-nav" class="main-nav fixed">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="nav-header d-flex justify-content-between align-items-center">
+                     <!-- 로고 누르면 index.html 다시 -->
+                     <a href="logged.html" class="logo" title="LOGO">
+                        
+                     <!-- 로고 이미지-->
+                     <img class="logo-img" src="../img/post.png" alt="LOGO">
+                     </a>
+                  </div>
+                  <div class="nav-wrap">
+                     <ul id="nav" class="nav-wrap__list menu">
+                        <!-- 첫번쨰 Nav Bar 링크 -->
+                        <li class="current"><a href="logged.html" title="new">최신목록</a></li>
+
+                        <!-- 두번째 Nav bar 링크 -->
+                        <li><a href="top100.html" title="top100">TOP 100</a></li>
+                        
+                        <!-- Dropdown 바 생성-->
+                        <div class="dropdown">
+                           <span>
+                              <div class="drop-ed"></div>
+                           </span>
+                           <div class="dropdown-content">
+                              <span class="arrow_box"></span>
+                              <ul class="drop-vape">
+                                 <li><a href="category1.html">category1</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                                 <li><a href="#">Банлист</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </ul>
+                     <!-- 2 Buttons Next to Nav -->
+                     <div class="riglt-floats-xs">
+                        <!-- 마이페이지 링크 -> 버튼으로 -->
+                        <a href="mypage.html" class="a-mypage"><span class="ic-sx21"></span>마이페이지</a>
+                        
+                        <!-- 로그인 페이지 링크 -> 버튼으로 -->
+                        <a href = "register.html" class="a-login" data-modal= "modalOne"><span class="ic-sx22"></span>음악 추가하기</a>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      
+      <br><br>
+      <!-- Home Section END -->
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-9 col-md-9">
+               
+               <!-- ForEach item 반복문 사용-->
+               <div class="news-link">
+
+                  <!-- 사진 -->
+                  <img class="poster" src="/img/post.png" />
+
+                  <!-- if문 사용해서 date < 7 days 이면 span tag 보이게-->
+                  <span class="new-news">NEW</span>
+
+                  <!-- 제목 -->
+                  <h3 class="news-log">[제목]</h3>
+
+                  <!-- Box alignment 맞추기 위해 만든 dummy tag -->
+                  <p class="description">
+                     <span style = "opacity:0;">음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명음악설명</span>
+                  </p>
+
+                  <!-- 음원 정보-->
+                  <p class="description">
+                     음원 정보
+                  </p>
+
+                  <a href="#" class="btn-view"><span class="ic-sx22"></span> 노래 듣기</a>
+                  <span class="time-data">작성자 이름</span>
+               </div>
+               
+
+            </div>
+         </div>
+      </div>
+
+      <!-- Footer START -->
+      <footer class="section site-footer bg-dark">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-2 col-md-2">
+                  <img class="logo-img my-3" src="../img/post.png" alt="LOGO">
+               </div>
+               <div class="col-lg-6 col-md-6 text-center">
+                  <p class="footer-text">[22000520 이성규] [22000120 김신] 실프 프로젝트</p>
+               </div>
+               <div class="col-md-4">
+                  <ul class="ft-nav social-nav my-3">
+                     <li class="mx-1"><a href="javascript:void(0);" title="이성규 Github"><i class="fa fa-github"></i></a></li>
+                     <li class="mx-1"><a href="javascript:void(0);" title="이성규 YouTube"><i class="fa fa-youtube-play"></i></a></li>
+                     <li class="mx-1"><a href="javascript:void(0);" title="김신 GitHub"><i class="fa fa-github"></i></a></li>
+                     <li class="mx-1"><a href="javascript:void(0);" title="김신 YouTube"><i class="fa fa-youtube-play"></i></a></li>
+                  </ul>
+                  <a href="http://larts.pro/">
+                  <span class="corp-design"></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      
+   </div>
+   <script  src="./js/script.js"></script>
+</body>
+</html>

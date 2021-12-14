@@ -1,7 +1,25 @@
 span.red-fox {
     color: #fe666f;
 }
-a.btn-login {
+button.btn-mypage {
+    background: linear-gradient(to right, #ffa857, #fe5a73);
+    padding: 0px 10px;
+    color: #fff;
+    border-radius: 3px;
+    width: 190px;
+    height: 53px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 10px 65px 0px #ccd4e0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    float: left;
+    transition: .5s;
+    line-height: 45px;
+    text-align: -webkit-center;
+}
+a.a-mypage {
     background: linear-gradient(to right, #ffa857, #fe5a73);
     padding: 0px 10px;
     color: #fff;
@@ -31,7 +49,15 @@ span.ic-sx21 {
     padding-right: 30px;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
-a.btn-login:hover {
+button.btn-mypage:hover {
+    box-shadow: 0px 20px 45px 0px #ccd4e0;
+    background: linear-gradient(to right, #ffb26b, #ff6a80);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+a.a-mypage:hover {
     box-shadow: 0px 20px 45px 0px #ccd4e0;
     background: linear-gradient(to right, #ffb26b, #ff6a80);
     -moz-transform: scale(1.05);
@@ -43,7 +69,16 @@ a.btn-login:hover {
     /* display: -webkit-inline-box; */
     float: right;
 }
-a.btn-startgames:hover {
+a.a-login:hover{
+    background: linear-gradient(to right, #55b2fd, #6573ea);
+    box-shadow: 0px 20px 45px 0px #ccd4e0;
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+button.btn-login:hover {
     background: linear-gradient(to right, #55b2fd, #6573ea);
     box-shadow: 0px 20px 45px 0px #ccd4e0;
     -moz-transform: scale(1.05);
@@ -52,8 +87,10 @@ a.btn-startgames:hover {
     transform: scale(1.05);
 }
 .drop-ed {
+ 
     width: 25px;
     height: 6px;
+  
     background: url(/icons/droped.png) no-repeat;
     background-size: contain;
     cursor: pointer;
@@ -502,7 +539,8 @@ span.online-o {
 }
 footer.section.site-footer.bg-dark {
     background: #343a4a !important;
-    padding: 10px;
+    padding: 5px;
+    margin-top: 30px;
 }
 img.logo-img.my-3 {
     color: #484f62;
@@ -590,7 +628,7 @@ span.num-1 {
     box-shadow: 0px 10px 45px 0px rgba(120, 191, 17, 0.35);
     float: left;
 }
-
+/*
 span.num-1:after {
     content: "";
     width: 23px;
@@ -604,7 +642,7 @@ span.num-1:after {
     box-shadow: 0px 10px 45px 0px rgba(120, 191, 17, 0.35);
     margin-left: 24px;
 }
-
+*/
 .reved {
     display: -webkit-box;
     background: #fff;
@@ -670,7 +708,7 @@ span.num-2 {
     float: left;
 }
 
-span.num-2:after {
+/* span.num-2:after {
     content: "";
     width: 23px;
     height: 23px;
@@ -682,7 +720,7 @@ span.num-2:after {
     margin-top: -58px;
     box-shadow: 0px 10px 45px 0px rgba(191, 17, 17, 0.35);
     margin-left: 24px;
-}
+} */
 span.num-3 {
     background: linear-gradient( 45deg, #fb881b, #fac75e );
     padding: 15px 18px;
@@ -694,7 +732,7 @@ span.num-3 {
     float: left;
 }
 
-span.num-3:after {
+/* span.num-3:after {
     content: "";
     width: 23px;
     height: 23px;
@@ -706,7 +744,7 @@ span.num-3:after {
     margin-top: -58px;
     box-shadow: 0px 10px 45px 0px rgb(251, 142, 34);
     margin-left: 24px;
-}
+} */
 span.num-4 {
     background: linear-gradient( 45deg, #5261d5, #43a1ef );
     padding: 15px 18px;
@@ -718,7 +756,7 @@ span.num-4 {
     float: left;
 }
 
-span.num-4:after {
+/* span.num-4:after {
     content: "";
     width: 23px;
     height: 23px;
@@ -730,7 +768,7 @@ span.num-4:after {
     margin-top: -58px;
     box-shadow: 0px 10px 45px 0px rgb(81, 101, 215);
     margin-left: 24px;
-}
+} */
 .video-block {
     margin-top: 80px;
 }
@@ -955,6 +993,38 @@ input#mail {
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
 }
+label{
+    font-size: 20px;
+}
+input#category{
+    color: #555758;
+    font-size: 14px;
+    background: #e7eef6;
+    border-bottom: 1px solid #fff;
+    border: none;
+    padding: 15px;
+    width: 100px;
+    border-radius: 3px;
+    font-weight: 600;
+    margin-left: 210px;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
+    outline: none;
+}
+
+textarea#content{
+    color: #555758;
+    font-size: 14px;
+    background: #e7eef6;
+    border-bottom: 1px solid #fff;
+    border: none;
+    padding: 15px;
+  
+    border-radius: 3px;
+    font-weight: 600;
+    margin-left: 210px;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
+   
+}
 span.name-form:after {
     content: "";
     width: 160px;
@@ -1036,12 +1106,12 @@ input#password-repeat {
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
 }
-a.register {
+input.register {
     background: linear-gradient(to right, #6cb615, #9adb01);
     padding: 0px 10px;
     color: #fff;
     border-radius: 3px;
-    width: 190px;
+    width: 490px;
     height: 53px;
     border-bottom: 5px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0px 10px 65px 0px #ccd4e0;
@@ -1069,37 +1139,9 @@ a.register {
     width: 530px;
 }
 
-a.register:hover {
+input.register:hover {
     box-shadow: 0px 20px 45px 0px #ccd4e0;
     background: linear-gradient(to right, #83d028, #a7e80d);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-a.icon-vks {
-    background: linear-gradient(to right, #42a4f3, #5260d5);
-    display: -webkit-box;
-    margin: 0 auto;
-    height: 53px;
-    padding: 15px;
-    margin-left: 25px;
-    border-radius: 3px;
-    border-bottom: 5px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0px 10px 65px 0px #ccd4e0;
-    transition: .5s;
-}
-
-span.vk-btn {
-    width: 43px;
-    height: 20px;
-    background: url(/icons/vkr.png) no-repeat;
-    display: block;
-}
-
-a.icon-vks:hover {
-    background: linear-gradient(to right, #55b2fd, #6573ea);
-    box-shadow: 0px 20px 45px 0px #ccd4e0;
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -1168,3 +1210,6 @@ a.btn-startgames.macosx.lf {
 a.btn-startgames.macosx.lf:hover {
     background: linear-gradient(to right, #83d028, #a7e80d);
 }
+
+
+/* category */
