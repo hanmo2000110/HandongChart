@@ -110,9 +110,21 @@
                   <p class="description">
                      음원 정보
                   </p>
+                  
+                  <a href="#" class="btn-view" id = "playvideo" onclick="playme()"><span class="ic-sx22"></span> 노래 듣기</a>
+                  <iframe id="test" title = "test" style="width:520px;height:300px;display:none;" allowfullscreen></iframe>
 
-                  <a href="#" class="btn-view"><span class="ic-sx22"></span> 노래 듣기</a>
                   <span class="time-data">작성자 이름</span>
+                  
+                  <script>
+
+                     function playme()
+                     {
+                        document.getElementById("test").src = 'https://www.youtube.com/embed/aG_tbPXV4IM?autoplay=1&mute=0&value=1';
+                        document.getElementById("test").style = "width:520px;height:300px;display:inline;";
+                     }
+                  </script>
+                  
                </div>
                
 
